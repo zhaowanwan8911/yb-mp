@@ -1,0 +1,23 @@
+<navigator class="user-wrap" url="../userInfo/userInfo">
+  <view class="left-wrap">
+   <image class="image-wrap" src="{{headImage}}" />
+  </view> 
+  <view class="right-wrap">
+    {{user.name}}-{{user.mobile}}
+  </view>
+</navigator>
+
+<route_item wx:for="{{childConfigs}}" wx:key="item" leftText="{{item.leftText}}" rightValue="{{item.rightValue}}"></route_item>
+
+<view style="margin-top: 10px"></view>
+
+<route_item leftText="设置" rightValue="../setting/setting"></route_item>
+
+<button class="contact-btn" open-type="contact">
+  <view class="left-wrap">
+    <text>联系客服</text>
+  </view>
+  <view class="right-wrap">
+    <image src="../../icons/arrow-right.png" class="image-wrap"></image>
+  </view>
+</button> 

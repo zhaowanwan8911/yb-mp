@@ -1,0 +1,9 @@
+<view class="text-input-ctn">
+  <view class="left-wrap" bindtap='sendSms'>
+    <text>{{sendSmsTxt}}</text>
+  </view>
+  <view class="right-wrap">
+    <input bindinput="bindSmsInput" class="input-wrap" placeholder="请输入"/>
+  </view>
+</view>
+

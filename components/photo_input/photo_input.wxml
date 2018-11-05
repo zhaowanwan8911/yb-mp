@@ -1,0 +1,8 @@
+<view class="photo-input-ctn" bindtap='uploadPhoto'>
+  <view class="left-wrap">
+    <text>{{leftText}}</text>
+  </view>
+  <view class="right-wrap">
+    <image class="photo-wrap" src="{{rightValue}}" />
+  </view>
+</view>

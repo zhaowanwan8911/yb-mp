@@ -1,0 +1,11 @@
+  <view class="record-wrap">
+    <view class="left-wrap">
+      <image src="{{record.painting}}"></image>
+    </view>
+    <view class="right-wrap">
+       <text>作者：{{record.studentName || '小画家'}}</text>
+      <text>作品：{{record.subject}}</text> 
+      <text>日期：{{record.date}}</text>
+      <text>评价：{{record.remark}}</text>
+    </view>
+  </view>

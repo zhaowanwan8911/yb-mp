@@ -1,0 +1,23 @@
+.route-item-ctn {
+  height: 80rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #E0E6ED;
+  padding-left: 30rpx;
+  background: #fff;
+}
+.left-wrap {
+  flex: 1;
+}
+.right-wrap {
+  flex: 1;
+  text-align: right;
+  margin-right: 60rpx;
+}
+
+.image-wrap {
+  width: 20rpx;
+  height: 30rpx;
+}

@@ -1,0 +1,12 @@
+<view class="select-input-ctn">
+  <view class="left-wrap">
+    <text>{{leftText}}</text>
+  </view>
+  <view class="right-wrap">
+    <picker bindchange="bindPickerChange" mode="date" value="{{rightValue}}" start="1950-09-01" end="2018-09-01">
+      <view class="picker">
+        <text>{{rightValue}}</text>
+      </view>
+    </picker>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+.button-wrap {
+  height: 100rpx;
+  width: 100%;
+  text-align: center;
+  background-color: #3076FC;
+  color: #fff;
+  line-height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

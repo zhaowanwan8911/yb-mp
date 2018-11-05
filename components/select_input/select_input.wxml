@@ -1,0 +1,12 @@
+<view class="select-input-ctn">
+  <view class="left-wrap">
+    <text>{{leftText}}</text>
+  </view>
+  <view class="right-wrap">
+    <picker bindchange="bindPickerChange" range="{{array}}">
+      <view class="picker">
+        <text>{{rightValue}}</text>
+      </view>
+    </picker>
+  </view>
+</view>

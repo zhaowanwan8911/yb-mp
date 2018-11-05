@@ -1,0 +1,8 @@
+<view class="text-show-ctn" bindtap='showTips'>
+  <view class="left-wrap">
+    <text>{{leftText}}</text>
+  </view>
+  <view class="right-wrap">
+    <text>{{rightValue}}</text>
+  </view>
+</view>

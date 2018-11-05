@@ -1,0 +1,21 @@
+<view style="background: #fff">
+  <view class="logo-wrapper">
+    <image class="image-wrap" src="../../icons/logo_h5.png" />
+  </view>
+
+  <form bindsubmit="login"> 
+    <view class="input-wrap">
+      <view class="label-wrap">手机:</view>
+      <input name="mobile" placeholder="请输入" />
+    </view>
+    <view class="input-wrap">
+      <view class="label-wrap">密码:</view>
+      <input type="password" name="password" placeholder="请输入" />
+    </view>
+    <view class="btn-wrap">
+      <button formType="submit">登录</button>
+    </view>
+  </form>
+
+  <navigator class="register-wrapper" url="../register/register">还没账号，点击去注册吧！</navigator>
+</view>
