@@ -11,8 +11,6 @@
 
 <view style="margin-top: 10px"></view>
 
-<route_item leftText="设置" rightValue="../setting/setting"></route_item>
-
 <button class="contact-btn" open-type="contact">
   <view class="left-wrap">
     <text>联系客服</text>
@@ -21,3 +19,4 @@
     <image src="../../icons/arrow-right.png" class="image-wrap"></image>
   </view>
 </button> 
+<route_item leftText="退出登录" bindcustomevent="logout"></route_item>

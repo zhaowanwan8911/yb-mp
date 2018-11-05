@@ -18,4 +18,10 @@ Page({
       this.setData({ headImage: app.user.profilePhoto });
     }
   },
+  logout: () => {
+    wx.clearStorageSync();
+    wx.navigateTo({
+      url: '../login/login'
+    });
+  },
 });

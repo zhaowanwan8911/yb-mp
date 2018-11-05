@@ -5,6 +5,8 @@ Page({
   data: {
     records: [],
     imgUrls: [
+      'http://img.yibiankeji.com/ybkj/slide01.png',
+      'http://img.yibiankeji.com/ybkj/slide02.png',
     ],
     indicatorDots: false,
     autoplay: false,

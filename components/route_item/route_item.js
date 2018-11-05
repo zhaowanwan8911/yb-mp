@@ -4,20 +4,10 @@ Component({
       type: String,
       value: '',
     },
-    rightValue: {
-      type: String,
-      value: '',
-    },
-  },
-  data: {
-
   },
   methods: {
-    goNextPage: (e) => {
-      console.log(e)
-      // wx.navigateTo({
-      //   url: '../setting/setting'
-      // });
-    },
+    onClick: function () {
+      this.triggerEvent('customevent');
+    }
   }
 })
