@@ -1,0 +1,8 @@
+<text_input bindcustomevent="inputName" leftText="昵称" rightValue=""></text_input>
+<text_input bindcustomevent="inputRealName" leftText="姓名" rightValue=""></text_input>
+<text_input bindcustomevent="inputMobile" leftText="手机" rightValue=""></text_input>
+<password_input bindcustomevent="inputPassword" leftText="密码" rightValue=""></password_input>
+<password_input bindcustomevent="inputConfirmPass" leftText="确认密码" rightValue=""></password_input>
+<sms_input bindcustomevent="inputSms" mobile="{{mobile}}"></sms_input>
+
+<foot_button bindcustomevent="register" btnText="注册"></foot_button>

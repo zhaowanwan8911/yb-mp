@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "注册",
+  "usingComponents": {
+    "text_input": "/components/text_input/text_input",
+    "sms_input": "/components/sms_input/sms_input",
+    "password_input": "/components/password_input/password_input",
+    "foot_button": "/components/foot_button/foot_button"
+  }
+}
