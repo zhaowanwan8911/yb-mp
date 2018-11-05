@@ -12,10 +12,10 @@ Page({
     duration: 1000
   },
   onShow: function () {
-    api.getHomeRecords((res) => {
-      if (res.data.code == 200) {
-        this.setData({ records: res.data.data });
-      }
-    });
+    // api.getHomeRecords((res) => {
+    //   if (res.data.code == 200) {
+    //     this.setData({ records: res.data.data });
+    //   }
+    // });
   },
 });

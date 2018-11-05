@@ -10,7 +10,7 @@ Page({
   onShow: function () {
     this.setData({ user: app.user });
     if (!app.user.id) {
-      // wx.navigateTo({ url: '../login/login' });
+      wx.navigateTo({ url: '../login/login' });
     } 
     if (!app.user.profilePhoto) {
       this.setData({ headImage: '../../icons/defaultProfilePhoto.png' });
