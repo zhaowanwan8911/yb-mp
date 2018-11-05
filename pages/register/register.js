@@ -76,8 +76,9 @@ Page({
     api.register(params, (res) => {
       if (res.data.code === 0) {
         const fomatToken = `Bearer ${res.data.data.token}`;
+        app.user = res.data.data.userInfo;
         wx.setStorage({ key: "token", data: res.data.data.token });
-        wx.setStorage({ key: "user", data: res.data.data.userInfo });
+        wx.setStorage({ key: "user", data: app.user });
         wx.switchTab({ url: '../index/index' });
       } else {
         wx.showToast({ icon: 'none', title: res.data.msg });

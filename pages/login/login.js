@@ -10,7 +10,7 @@ Page({
   },
   login: function (e) {
     api.login(e.detail.value, (res) => {
-      if (res.data.code === 200) {
+      if (res.data.code === 0) {
         const fomatToken = `Bearer ${res.data.data.token}`;
         wx.setStorage({ key: "token", data: fomatToken });
         app.user = res.data.data.userInfo;
@@ -19,7 +19,7 @@ Page({
         } else {
         wx.showModal({
           showCancel: false,
-          title: '请求失败',
+          title: '登录失败',
           content: res.data.msg,
         });
       }
