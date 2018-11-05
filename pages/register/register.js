@@ -66,22 +66,21 @@ Page({
     //   wx.showToast({ title: "请输入验证码！" });
     // }
 
-    api.register(this.data, (res) => {
+    const params = {
+      name: this.data.name,
+      realName: this.data.realName,
+      mobile: this.data.mobile,
+      password: this.data.password,
+    }
+
+    api.register(params, (res) => {
       if (res.data.code === 0) {
         const fomatToken = `Bearer ${res.data.data.token}`;
-        wx.setStorage({
-          key: "token", data: fomatToken, success: () => {
-            // api.getUserInfo((respones) => {
-            //   if (respones.data.code === 200) {
-            //     app.user = respones.data.data;
-            //     wx.setStorage({ key: "user", data: respones.data.data });
-            //   }
-            // });
-          }
-        });
+        wx.setStorage({ key: "token", data: res.data.data.token });
+        wx.setStorage({ key: "user", data: res.data.data.userInfo });
         wx.switchTab({ url: '../index/index' });
       } else {
-        wx.showToast({ title: '请求失败', content: res.data.msg });
+        wx.showToast({ icon: 'none', title: res.data.msg });
       }
     });
   }
