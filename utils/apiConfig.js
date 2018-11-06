@@ -19,7 +19,11 @@ const get = (url, successCallback) => {
     header: heaherCongfig,
     method: "GET",
     success: (res) => {
-      successCallback(res);
+      if (res.data.code !== 0) {
+        wx.showToast(res.data.msg);
+      } else {
+        successCallback(res);
+      }
     },
     fail: (e) => {
       wx.showToast({ title: "服务器请求有误！" })
@@ -50,7 +54,7 @@ const post = (url, params, successCallback) => {
     header: heaherCongfig,
     method: "POST",
     success: (res) => {
-      if (data.code !== 0) {
+      if (res.data.code !== 0) {
         wx.showToast(res.data.msg);
       } else {
         successCallback(data);
