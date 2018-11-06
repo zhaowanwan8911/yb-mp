@@ -26,6 +26,6 @@ export default {
     return post(`${baseUrl}/api/base/sendsms`, params, callback);
   },
   uploadPhoto(params, callback) {
-    return upload(`${baseUrl}/api/profile/upload`, params, callback);
+    return upload(`${baseUrl}/api/base/upload`, params, callback);
   }
 };
