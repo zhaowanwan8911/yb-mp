@@ -29,7 +29,7 @@
   margin: 10px 15px;
 }
 .btn-wrap button {
-  background: #3076FC;
+  background: #67af08;
 }
 .register-wrapper {
   color:red;
