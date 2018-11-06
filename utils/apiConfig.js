@@ -20,7 +20,7 @@ const get = (url, successCallback) => {
     method: "GET",
     success: (res) => {
       if (res.data.code !== 0) {
-        wx.showToast(res.data.msg);
+        wx.showToast({ icon: 'none', title: res.data.msg });
       } else {
         successCallback(res);
       }
@@ -55,7 +55,7 @@ const post = (url, params, successCallback) => {
     method: "POST",
     success: (res) => {
       if (res.data.code !== 0) {
-        wx.showToast(res.data.msg);
+        wx.showToast({ icon: 'none', title: res.data.msg });
       } else {
         successCallback(res);
       }
@@ -90,7 +90,7 @@ const put = (url, params, successCallback) => {
     method: "PUT",
     success: (res) => {
       if (res.data.code !== 0) {
-        wx.showToast(res.data.msg);
+        wx.showToast({ icon: 'none', title: res.data.msg });
       } else {
         successCallback(res);
       }
@@ -130,7 +130,7 @@ const upload = (url, params, successCallback) => {
         success(res) {
           const data = JSON.parse(res.data)
           if (data.code !== 0) {
-            wx.showToast(res.data.msg);
+            wx.showToast({ icon: 'none', title: res.data.msg });
           } else {
             successCallback(data);
           }
