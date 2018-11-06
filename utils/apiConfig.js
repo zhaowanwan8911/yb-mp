@@ -57,7 +57,7 @@ const post = (url, params, successCallback) => {
       if (res.data.code !== 0) {
         wx.showToast(res.data.msg);
       } else {
-        successCallback(data);
+        successCallback(res);
       }
     },
     fail: (e) => {
