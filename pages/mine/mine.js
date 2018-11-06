@@ -18,10 +18,15 @@ Page({
       this.setData({ headImage: app.user.profilePhoto });
     }
   },
+  updatePassword: () => {
+    wx.navigateTo({
+      url: '../updatePassword/updatePassword'
+    });
+  },
   logout: () => {
     wx.clearStorageSync();
     wx.navigateTo({
       url: '../login/login'
     });
-  },
+  }, 
 });

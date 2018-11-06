@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/mine/mine",
     "pages/login/login",
-    "pages/register/register"
+    "pages/updatePassword/updatePassword",
+    "pages/register/register",
+    "pages/userInfo/userInfo"
   ],
   "window": {
     "backgroundTextStyle": "light",

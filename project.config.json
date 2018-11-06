@@ -27,12 +27,16 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -45,6 +49,11 @@
 					"name": "login",
 					"pathName": "pages/login/login",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "u",
+					"pathName": "pages/userInfo/userInfo"
 				}
 			]
 		}

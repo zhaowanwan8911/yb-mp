@@ -1,0 +1,8 @@
+<photo_input leftText="头像" bindcustomevent="changeProfilePhoto" rightValue="{{headImage}}" photoName="{{photoName}}"></photo_input>
+<text_input leftText="昵称" rightValue="{{name}}"></text_input>
+<text_show leftText="手机" rightValue="{{mobile}}"></text_show>
+<date_input bindcustomevent="selectBirthday" leftText="生日" rightValue="{{birthday}}"></date_input>
+<select_input bindcustomevent="selectSex" leftText="性别" rightValue="{{sexText}}" range="{{array}}"></select_input>
+<text_input bindcustomevent="inputAddress" leftText="地址" rightValue="{{address}}" ></text_input>
+
+<foot_button bindcustomevent="resetUser" btnText="更新"></foot_button>

@@ -2,12 +2,6 @@ import api from '../../utils/api.js'
 const app = getApp();
 
 Page({
-  data: {
-
-  },
-  onShow: function () {
-
-  },
   login: function (e) {
     api.login(e.detail.value, (res) => {
       if (res.data.code === 0) {

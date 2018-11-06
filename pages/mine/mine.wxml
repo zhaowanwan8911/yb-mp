@@ -19,4 +19,5 @@
     <image src="../../icons/arrow-right.png" class="image-wrap"></image>
   </view>
 </button> 
+<route_item leftText="修改密码" bindcustomevent="updatePassword"></route_item>
 <route_item leftText="退出登录" bindcustomevent="logout"></route_item>

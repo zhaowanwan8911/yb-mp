@@ -13,7 +13,7 @@
 .input-wrap {
   display: flex;
   flex-direction: row;
-  margin: 0 15px;
+  margin: 0 30rpx;
   margin-bottom: 20px;
 }
 .input-wrap .label-wrap {
@@ -21,7 +21,7 @@
 }
 .input-wrap input {
   flex: 5;
-  text-align: right;
+  text-align: left;
   width: 100%;
   border-bottom: 1px solid #e0e6ed;
 }

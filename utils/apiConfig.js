@@ -50,7 +50,11 @@ const post = (url, params, successCallback) => {
     header: heaherCongfig,
     method: "POST",
     success: (res) => {
-      successCallback(res);
+      if (data.code !== 0) {
+        wx.showToast(res.data.msg);
+      } else {
+        successCallback(data);
+      }
     },
     fail: (e) => {
       wx.showToast({ title: "服务器请求有误！" })
@@ -81,7 +85,7 @@ const put = (url, params, successCallback) => {
     header: heaherCongfig,
     method: "PUT",
     success: (res) => {
-      if (res.data.code !== 200) {
+      if (res.data.code !== 0) {
         wx.showToast(res.data.msg);
       } else {
         successCallback(res);
@@ -121,7 +125,7 @@ const upload = (url, params, successCallback) => {
         },
         success(res) {
           const data = JSON.parse(res.data)
-          if (data.code !== 200) {
+          if (data.code !== 0) {
             wx.showToast(res.data.msg);
           } else {
             successCallback(data);

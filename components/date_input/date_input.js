@@ -6,11 +6,8 @@ Component({
     },
     rightValue: {
       type: String,
-      value: '',
+      value: '请选择',
     },
-  },
-  data: {
-    array: ['男', '女'],
   },
   methods: {
     bindPickerChange: function (e) {

@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "基本信息",
+  "usingComponents": {
+    "photo_input": "/components/photo_input/photo_input",
+    "text_show": "/components/text_show/text_show",
+    "text_input": "/components/text_input/text_input",
+    "date_input": "/components/date_input/date_input",
+    "foot_button": "/components/foot_button/foot_button",
+    "select_input": "/components/select_input/select_input"
+  }
+}

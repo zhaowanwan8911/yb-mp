@@ -7,7 +7,7 @@ App({
       this.user = userInfo;
     }
     api.getOptions((res) => {
-      if (res.data.code == 200) {
+      if (res.data.code === 0) {
         this.baseOptions = res.data.data;
       }
     });
