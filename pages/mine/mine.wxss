@@ -43,8 +43,3 @@
   flex: 1;
   text-align: right;
 }
-
-.contact-btn .right-wrap .image-wrap {
-  width: 20rpx;
-  height: 30rpx;
-}

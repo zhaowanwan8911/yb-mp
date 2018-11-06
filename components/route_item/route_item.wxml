@@ -3,6 +3,6 @@
     <text>{{leftText}}</text>
   </view>
   <view class="right-wrap">
-    <image src="../../icons/arrow-right.png" class="image-wrap"></image>
+    <i class="iconfont icon-arrow"></i>
   </view>
 </view>

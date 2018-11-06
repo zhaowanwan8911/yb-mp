@@ -2,7 +2,7 @@
   height: 100rpx;
   width: 100%;
   text-align: center;
-  background-color: #3076FC;
+  background-color: #67af08;
   color: #fff;
   line-height: 100rpx;
   position: fixed;

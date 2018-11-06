@@ -16,7 +16,7 @@
     <text>联系客服</text>
   </view>
   <view class="right-wrap">
-    <image src="../../icons/arrow-right.png" class="image-wrap"></image>
+    <i class="iconfont icon-arrow"></i>
   </view>
 </button> 
 <route_item leftText="修改密码" bindcustomevent="updatePassword"></route_item>

@@ -1,3 +1,5 @@
+@import "../../app.wxss"
+
 .route-item-ctn {
   height: 80rpx;
   width: 100%;
@@ -15,9 +17,4 @@
   flex: 1;
   text-align: right;
   margin-right: 60rpx;
-}
-
-.image-wrap {
-  width: 20rpx;
-  height: 30rpx;
 }
