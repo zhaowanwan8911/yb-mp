@@ -24,7 +24,7 @@ Page({
       password,
     };
     api.updatePassword(id, params, (res) => {
-      if (res.data.code === 200) {
+      if (res.data.code === 0) {
         wx.navigateTo({ url: '../login/login' });
       } else {
         wx.showToast(res.data.msg);
